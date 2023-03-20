@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { GiPencilRuler, GiHamburgerMenu } from 'react-icons/gi'
+import { GiPencilRuler } from 'react-icons/gi'
+import { AiOutlineCalculator } from 'react-icons/ai'
 
 import { styles } from "../styles/styles";
 import { navLinks } from "../constants";
@@ -46,7 +47,14 @@ const Navbar = () => {
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center" onClick={() => setToggle(!toggle)}>
-          { toggle ? <GiPencilRuler size={24} color="#080671" /> : <GiHamburgerMenu size={24} color="#080671" /> }
+          <div className="cursor-pointer">
+            { toggle 
+              ? <GiPencilRuler size={24} color="#080671" /> 
+              : <AiOutlineCalculator size={24} color="#080671" /> 
+            } 
+          </div>
+
+
           <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-jsf-blue text-white-100 absolute top-20 right-0 my-2 min-w-[140px] min-h-[500px] z-10 rounded-l-xl`}>
             <ul className="list-none flex justify-evenly items-start gap-6 flex-col">
               {navLinks.map((link) => (
