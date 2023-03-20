@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "jsf-blue": "#0603a5",
+        "jsf-blue": "#080671",
         "black-100": "#111",
         "black-200": "#1d1d1d",
         "white-100": "#f3f3f3",
@@ -17,7 +17,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/office.jpeg')",
+        "hero-pattern": "url('/src/assets/office.jpg')",
       },
     },
   },
