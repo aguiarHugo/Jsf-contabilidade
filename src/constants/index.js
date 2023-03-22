@@ -1,15 +1,11 @@
 export const navLinks = [
   {
-    id: "whatIs",
+    id: "countability",
     title: "O que é Contabilidade?",
   },
   {
     id: "about",
     title: "Quem somos"
-  },
-  {
-    id: "mission",
-    title: "Missão",
   },
   {
     id: "contact",
