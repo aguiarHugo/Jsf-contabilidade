@@ -4,7 +4,7 @@ import { MdLocationOn } from 'react-icons/md'
 
 const Footer = () => {
   return (
-    <footer className='h-[90px] bg-jsf-blue flex items-center justify-center'>
+    <footer className='h-[90px] sm:h-[140px] bg-jsf-blue flex items-center justify-center'>
           <div className='flex flex-wrap gap-4'>
             <a 
             className='flex text-white-100 text-[14px] items-center gap-1'
