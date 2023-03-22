@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { GiPencilRuler } from 'react-icons/gi'
-import { AiOutlineCalculator } from 'react-icons/ai'
+import { BiMenuAltRight } from 'react-icons/bi'
 
 import { styles } from "../styles/styles";
 import { navLinks } from "../constants";
@@ -13,7 +13,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-white-100`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-1 fixed top-0 z-20 bg-white-100`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to='/'
@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className="cursor-pointer">
             { toggle 
               ? <GiPencilRuler size={24} color="#080671" /> 
-              : <AiOutlineCalculator size={24} color="#080671" /> 
+              : <BiMenuAltRight size={24} color="#080671" /> 
             } 
           </div>
 
