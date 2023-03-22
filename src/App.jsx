@@ -8,6 +8,7 @@ import Countability from "./components/Countability"
 import About from "./components/About"
 import Contact from "./components/Contact"
 import DotGroup from "./components/DotGroup"
+import Footer from './components/Footer'
 
 function App() {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)")
@@ -30,19 +31,20 @@ function App() {
               setSelectedPage={setSelectedPage}
             />
           )}
-
         </div>
         <div>
-        </div>
-        <div id="countability" className="h-6 md:h-0.5"/>
-        <Countability />
+          </div>
+            <div id="countability" className="h-6 md:h-0.5"/>
+            <Countability />
 
-        <div id="about" className="h-6 md:h-0.5"/>
-        <About />
+            <div id="about" className="h-6 md:h-0.5"/>
+            <About />
 
-        <div id="contact" className="h-6 md:h-0.5"/>
-        <Contact />
-        </div>
+            <div id="contact" className="h-6 md:h-0.5"/>
+            <Contact />
+
+            <Footer />
+          </div>
     </BrowserRouter>
   </div>
   )
