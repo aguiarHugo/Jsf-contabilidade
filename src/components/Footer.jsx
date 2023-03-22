@@ -6,7 +6,7 @@ import { styles } from '../styles/styles'
 
 const Footer = () => {
   return (
-    <footer className='h-[200px] md:h-[90px] flex flex-col items-center justify-center bg-jsf-blue'>
+    <footer className='h-[240px] md:h-[90px] flex flex-col items-center justify-center bg-jsf-blue'>
           <div className='flex items-center justify-center flex-wrap gap-4'>
             <a 
             className={styles.footerLinks}
