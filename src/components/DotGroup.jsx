@@ -2,7 +2,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const DotGroup = ({selectedPage, setSelectedPage}) => {
   const selectedStyles = `relative bg-jsf-blue before:absolute before:w-6 before:h-6 
-  before:rounded-full before:border-2 before:border-jsf-button before:left-[-50%]
+  before:rounded-full before:left-[-50%]
   before:top-[-50%]`
 
   return (
