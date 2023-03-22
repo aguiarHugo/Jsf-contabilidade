@@ -23,8 +23,8 @@ const Navbar = () => {
             window.scrollTo(0, 0)
           }}
         >
-          <div className="flex items-center text-golden">
-            <img src={logo} alt="logo" className="w-[120px] object-contain"/>
+          <div className="flex items-center text-jsf-blue">
+            <img id="home" src={logo} alt="logo" className="w-[120px] object-contain"/>
           </div>
         </Link>
         
@@ -34,12 +34,11 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title
-                ? 'text-golden' 
+                ? 'text-jsf-blue' 
                 : 'text-primary'
               }text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
             >
-              <a className="hover:text-golden" href={`#${link.id}`}>
+              <a className=" duration-300 hover:text-jsf-blue" href={`#${link.id}`}>
                 {link.title}
               </a>
             </li>
@@ -49,8 +48,8 @@ const Navbar = () => {
         <div className="sm:hidden flex flex-1 justify-end items-center" onClick={() => setToggle(!toggle)}>
           <div className="cursor-pointer">
             { toggle 
-              ? <GiPencilRuler size={24} color="#080671" /> 
-              : <BiMenuAltRight size={24} color="#080671" /> 
+              ? <GiPencilRuler size={24} color="#1b536c" /> 
+              : <BiMenuAltRight size={24} color="#1b536c" /> 
             } 
           </div>
 
@@ -62,15 +61,14 @@ const Navbar = () => {
                   key={link.id}
                   className={`${
                   active === link.title
-                  ? 'text-golden' 
+                  ? 'text-jsf-blue' 
                   : 'text-primary'
                   }text-[16px] font-poppins font-medium cursor-pointer`}
                   onClick={() =>{ 
                     setToggle(!toggle)
-                    setActive(link.title)
                   }}
                 >
-                  <a className="hover:text-golden" href={`#${link.id}`}>
+                  <a href={`#${link.id}`}>
                     {link.title}
                   </a>
                 </li>
