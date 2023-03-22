@@ -13,8 +13,11 @@ const styles = {
   sectionSubText:
     "font-black text-jsf-blue md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px]",
 
-    sectionFormText:
-    "font-black text-white-100 text-center md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px]"
+  sectionFormText:
+  "font-black text-white-100 text-center md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px]",
+
+  footerLinks:
+  "flex text-white-100 text-[14px] items-center gap-1 hover:opacity-70"
 };
 
 export { styles };
