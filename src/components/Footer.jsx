@@ -12,7 +12,7 @@ const Footer = () => {
             className={styles.footerLinks}
             href='https://www.google.com.br/maps/place/R.+Sete+de+Setembro,+23+-+Centro,+Nova+Friburgo+-+RJ,+28605-020/@-22.2780518,-42.5358951,17z/data=!3m1!4b1!4m5!3m4!1s0x978a94f854cffb:0x13221361679e9751!8m2!3d-22.2780518!4d-42.5337064?shorturl=1' 
             target='_blank'>
-              <MdLocationOn size={24} /> <p>Rua Sete de Setembro, n° 23.206 / 207, Nova Friburgo, RJ.</p>
+              <MdLocationOn size={24} /> <p>Nova Friburgo, RJ.</p>
             </a>
             <a 
             className={styles.footerLinks}
