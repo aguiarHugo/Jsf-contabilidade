@@ -4,8 +4,8 @@ import { MdLocationOn } from 'react-icons/md'
 
 const Footer = () => {
   return (
-    <footer className='h-[90px] sm:h-[140px] bg-jsf-blue flex items-center justify-center'>
-          <div className='flex flex-wrap gap-4'>
+    <footer className='h-[160px] md:h-[90px] flex flex-col items-center justify-center bg-jsf-blue'>
+          <div className='flex items-center justify-center flex-wrap gap-4'>
             <a 
             className='flex text-white-100 text-[14px] items-center gap-1'
             href='https://www.google.com.br/maps/place/R.+Sete+de+Setembro,+23+-+Centro,+Nova+Friburgo+-+RJ,+28605-020/@-22.2780518,-42.5358951,17z/data=!3m1!4b1!4m5!3m4!1s0x978a94f854cffb:0x13221361679e9751!8m2!3d-22.2780518!4d-42.5337064?shorturl=1' 
@@ -30,6 +30,9 @@ const Footer = () => {
             target='_blank'>
               <FaInstagram size={24} /> <p>@jsfcontabilidade</p>
             </a>
+          </div>
+          <div className='mt-4'>
+            <p className='text-white-100 font-black'>&copy;JSF Contabilidade e Assessoria</p>
           </div>
     </footer>
   )
