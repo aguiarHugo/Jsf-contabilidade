@@ -32,7 +32,7 @@ export const testimonials = [
   },
   {
     testimonial:
-      "Sempre achei que contadores não se preocupavam com seus clientes, até que a JSF me provou que eu estava errado.",
+      "Sempre achei que contadores não se preocupavam com seus clientes, até que a JSF provou que eu estava errado.",
     name: "Murilo Pinheiro",
     designation: "COO",
     company: "Umbrella Corp",
