@@ -5,14 +5,14 @@ import { SectionWrapper } from '../hoc'
 import { fadeIn, textVariant } from "../utils/motion"
 import { testimonials } from '../constants'
 
-const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => (
+const TestimonialsCard = ({ index, testimonial, name, designation, company, image }) => (
   <motion.div
     variants={fadeIn('', 'sprint', index * 0.5, 0.75)}
-    className='bg-jsf-blue p-10 rounded-3xl xs-w-[320px] w-full'
+    className='bg-jsf-blue p-4 rounded-3xl xs-w-[320px] w-full'
   >
-    <p className="text-white font-black text-[48px]">"</p>
+    <p className="text-white font-black text-[32px]">"</p>
 
-    <div className="mt-1">
+    <div>
       <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
@@ -37,17 +37,17 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
   </motion.div>
 )
 
-const Feedbacks = () => {
+const Testimonials = () => {
   return (
-    <div className="mt-12 bg-white-100 rounded-[20px]">
-      <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
+    <div className="bg-white-100 rounded-[20px]">
+      <div className={`rounded-2xl`}>
         <motion.div variants={textVariant()}>
-          <h3 className={`${styles.sectionHeadText} text-jsf-blue`}>Depoimentos</h3>
+          <h3 className={`${styles.sectionHeadText}`}>Opinião dos nossos <span className=" border-b-4 border-solid border-jsf-blue text-jsf-blue">Clientes</span></h3>
         </motion.div>
       </div>
-      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
+      <div className={`${styles.paddingX} mt-4 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
-          <FeedbackCard
+          <TestimonialsCard
             key={testimonial.name}
             index={index}
             {...testimonial}
@@ -58,4 +58,4 @@ const Feedbacks = () => {
   )
 }
 
-export default SectionWrapper (Feedbacks, '')
+export default SectionWrapper (Testimonials, '')

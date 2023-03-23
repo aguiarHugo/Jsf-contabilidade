@@ -70,7 +70,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-jsf-blue p-8 rounded-2xl'
+        className='flex-[0.75] bg-jsf-blue p-8 rounded-2xl mx-auto'
       >
         <p className={styles.sectionFormText}>Fale conosco</p>
         <form

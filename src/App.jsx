@@ -41,7 +41,7 @@ function App() {
             <div id="about" className="h-6 md:h-0.5"/>
             <About />
 
-            <div id="testimonials" />
+            <div id="testimonials" className="h-6 md:h-0.5" />
             <Testimonials />
 
             <div id="contact" className="h-6 md:h-0.5"/>
