@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Hero from "./components/Hero"
 import Countability from "./components/Countability"
 import About from "./components/About"
+import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact"
 import DotGroup from "./components/DotGroup"
 import Footer from './components/Footer'
@@ -39,6 +40,9 @@ function App() {
 
             <div id="about" className="h-6 md:h-0.5"/>
             <About />
+
+            <div id="testimonials" />
+            <Testimonials />
 
             <div id="contact" className="h-6 md:h-0.5"/>
             <Contact />
