@@ -2,7 +2,7 @@ import { BrowserRouter } from "react-router-dom"
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useState } from "react"
 
-import Navbar  from './components/Navbar'
+import Navbar from './components/Navbar'
 import Hero from "./components/Hero"
 import Countability from "./components/Countability"
 import About from "./components/About"
@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
       <div id="home" className="relative z-0 bg-white-100">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center bg-black">
-          <Navbar 
+          <Navbar
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}
           />
