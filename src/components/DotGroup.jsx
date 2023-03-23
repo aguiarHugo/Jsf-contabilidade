@@ -2,7 +2,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const DotGroup = ({selectedPage, setSelectedPage}) => {
   const selectedStyles = `relative bg-jsf-blue before:absolute before:w-6 before:h-6 
-  before:rounded-full before:left-[-50%]
+  before:rounded-full  before:left-[-50%]
   before:top-[-50%]`
 
   return (
@@ -11,7 +11,7 @@ const DotGroup = ({selectedPage, setSelectedPage}) => {
           className={`${selectedPage === 'Home' ? selectedStyles : "bg-jsf-blue"}
           w-3 h-3 rounded-full`}
           href='#home'
-          onClick={() => setSelectedPage('home')}
+          onClick={() => setSelectedPage('Home')}
         />
        <AnchorLink
           className={`${selectedPage === 'O que é Contabilidade?' ? selectedStyles : "bg-jsf-blue"}
