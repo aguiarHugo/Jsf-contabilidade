@@ -22,9 +22,9 @@ const Footer = () => {
             </a>
             <a 
             className={styles.footerLinks}
-            href='mailto:contabilidadejfs@gmail.com' 
+            href='mailto:contabilidadejsf@gmail.com' 
             target='_blank'>
-              <FaEnvelope size={24} /> <p>contabilidadejfs@gmail.com</p>
+              <FaEnvelope size={24} /> <p>contabilidadejsf@gmail.com</p>
             </a>
             <a 
             className={styles.footerLinks}
